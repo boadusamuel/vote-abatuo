@@ -1,0 +1,149 @@
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-color: darkviolet !important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.list-group-item{
+    font-size: 1.1rem !important;
+    background-color: darkviolet !important;
+    color: white !important;
+}
+
+#footer {
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    background-color: #FFFFFF !important;
+    color: #5E7395 !important;
+    text-align: center !important;
+
+}
+.foot  {
+    color: #5E7395 !important;
+    text-decoration: #5E7395 !important;
+}
+
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+@media (min-width: 600px) {
+    #menu-toggle{
+        display: none;
+    }
+
+}
+
+#card table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#card tr:nth-of-type(odd){
+    background: #eee;
+}
+
+#card th {
+    background: #9411D3;
+    color: white;
+    font-weight: bold;
+}
+
+#card td, #card th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px){
+    #card table, #card thead, #card tbody, #card th, #card td, #card tr{
+        display: block;
+    }
+    #card table thead tr{
+       position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #card tr {
+
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 1px #dadada;
+    }
+    #card table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+
+    }
+
+    #card table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    #card td:nth-of-type(1):before { content: "Name"; }
+    #card td:nth-of-type(2):before { content: "Communication"; }
+    #card td:nth-of-type(3):before { content: "Ownership"; }
+    #card td:nth-of-type(4):before { content: "Respect"; }
+    #card td:nth-of-type(5):before { content: "Integrity"; }
+    #card td:nth-of-type(6):before { content: "Prof. / Job Exc."; }
+    #card td:nth-of-type(7):before { content: "Team Work"; }
+    #card td:nth-of-type(8):before { content: "Total Vote"; }
+
+
+#printer {
+    display: none !important;
+}
+
+}
+
+
+
+
+
+

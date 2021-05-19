@@ -1,0 +1,15 @@
+---
+application:
+  name: "vote-abatuo"
+  project: "abatuo"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "laravel"
+  version: "10"
+routers:
+- name: "main-vote-abatuo"
+  routes:
+  - application_name: "vote-abatuo"
+    paths:
+    - "/*"
